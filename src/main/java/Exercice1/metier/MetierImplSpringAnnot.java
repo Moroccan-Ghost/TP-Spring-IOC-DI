@@ -1,11 +1,10 @@
 package Exercice1.metier;
 
 import Exercice1.dao.IDao;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component("metier")
+@Service("metier")
 public class MetierImplSpringAnnot implements IMetier{
     /*
     * we can use @Autowired and remove the construct with params
