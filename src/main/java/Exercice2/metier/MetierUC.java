@@ -13,8 +13,8 @@ public class MetierUC implements IMetierUC{
 
     private IDaoVGA vga;
 
-    /*If we are using construct we must put the Quelifier in params not before the vars declaration*/
-    public MetierUC(@Qualifier("clavier") IDaoUSB usb, @Qualifier("projecteur") IDaoVGA vga) {
+    /*If we are using construct we must put the Qualifier in params not before the vars declaration*/
+    public MetierUC(@Qualifier("clavier") IDaoUSB usb, @Qualifier("tv") IDaoVGA vga) {
         this.usb = usb;
         this.vga = vga;
     }
